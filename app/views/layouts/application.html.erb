@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TurboRailsBootstrap5</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body class="d-flex flex-column vh-100">
+    <main class="container-fluid flex-fill py-4">
+      <%= yield %>
+    </main>
+    <footer class="bg-primary p-5">
+      <p class="text-center text-white">
+        Footer
+      </p>
+    </footer>
+  </body>
+</html>
